@@ -21,5 +21,3 @@ jobs:
           cml-publish TimeSeriesModel-Sales.png --md >> report.md
           echo "### Customers Model" >> report.md
           echo "### Model training history" >> report.md
-          cml-publish TimeSeriesModel-Customers.png --md >> report.md
-          cml-send-comment report.md
