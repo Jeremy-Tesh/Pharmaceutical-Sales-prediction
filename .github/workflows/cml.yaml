@@ -7,11 +7,11 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
       - uses: iterative/setup-cml@v1
-      - name: train time series model
-        run: |
-          pip install -r requirements.txt
-          cd models/
-          python time_series_model.py
+      # - name: train time series model
+      #   run: |
+      #     pip install -r requirements.txt
+      #     cd models/
+      #     python time_series_model.py
 
       - name: Write CML report
         run: |
