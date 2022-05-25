@@ -124,7 +124,7 @@ class DfCleaner():
         pd.DataFrame: pandas data frame with converted data types
     """
     for col in columns:
-      df[col] = df[col].astype('int64')
+      df[col] = df[col].astype('Int64')
     return df
 
   def convert_to_datetime(self, df: pd.DataFrame, columns: list) -> pd.DataFrame:
