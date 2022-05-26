@@ -10,7 +10,7 @@ jobs:
       - name: train time series model
         run: |
           pip install -r requirements.txt
-          cd models/
+          cd scripts/
           python time_series_model.py
 
       - name: Write CML report
