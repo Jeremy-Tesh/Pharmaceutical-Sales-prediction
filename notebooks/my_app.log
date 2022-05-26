@@ -27,3 +27,9 @@ Traceback (most recent call last):
   File "/home/ermi/Desktop/10Academy/week3/scripts/file_handler.py", line 56, in read_model
     model = pickle.load(open(name, "rb"))
 FileNotFoundError: [Errno 2] No such file or directory: '../models/RandomForestRegressor-sales-2021-08-01-20:17.pkl'
+2022-05-26 17:49:09,207 — DfHelper — DEBUG — model read as pkl
+2022-05-26 17:49:14,926 — DfHelper — DEBUG — model read as pkl
+2022-05-26 17:55:25,111 — DfHelper — DEBUG — model read as pkl
+2022-05-26 19:12:36,278 — DfHelper — DEBUG — model read as pkl
+2022-05-26 19:20:15,102 — DfHelper — DEBUG — model read as pkl
+2022-05-26 19:20:41,282 — DfHelper — DEBUG — model read as pkl

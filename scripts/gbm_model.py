@@ -1,12 +1,11 @@
-from train_model import TrainModel
 from lightgbm import LGBMRegressor
+from config import Config
+from train_model import TrainModel
 
+# create a model
+model = LGBMRegressor()
 
-def model():
-  model = LGBMRegressor()
-  return model
+train_model = TrainModel(model, "Light GBM Regressor")
 
-
-train_model = TrainModel(model, "LGBMRegressor")
-sales_model = train_model.train_sales()
-customers_model = train_model.train_customers()
+train_model.train_sales()
+train_model.train_customers()

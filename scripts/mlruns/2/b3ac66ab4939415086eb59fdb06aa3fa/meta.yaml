@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ermi/Desktop/10Academy/week3/scripts/mlruns/2/b3ac66ab4939415086eb59fdb06aa3fa/artifacts
+end_time: 1653583432706
+entry_point_name: ''
+experiment_id: '2'
+lifecycle_stage: active
+name: ''
+run_id: b3ac66ab4939415086eb59fdb06aa3fa
+run_uuid: b3ac66ab4939415086eb59fdb06aa3fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1653582535762
+status: 3
+tags: []
+user_id: ermi
