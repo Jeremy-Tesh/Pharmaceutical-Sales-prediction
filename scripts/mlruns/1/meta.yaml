@@ -1,0 +1,4 @@
+artifact_location: file:///home/ermi/Desktop/10Academy/week3/scripts/mlruns/1
+experiment_id: '1'
+lifecycle_stage: active
+name: RandomForestRegressor
