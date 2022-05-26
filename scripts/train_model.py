@@ -5,6 +5,8 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from file_handler import FileHandler
 
+mlflow.autolog()
+
 class TrainModel():
     '''
     Class for training a model using sklearn pipeline
@@ -39,3 +41,5 @@ class TrainModel():
         X = pd.read_csv('../features/train_features.csv')
         y = pd.read_csv('../features/train_customers.csv')
         self.train(X, y, 'Customers')
+
+autolog_run = mlflow.last_active_run()

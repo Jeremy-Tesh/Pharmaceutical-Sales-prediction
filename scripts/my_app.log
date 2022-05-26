@@ -23,3 +23,46 @@
 2022-05-26 19:59:16,156 — DfHelper — INFO — file saved as csv
 2022-05-26 20:09:21,754 — DfHelper — INFO — file saved as csv
 2022-05-26 20:10:34,274 — DfHelper — INFO — file saved as csv
+2022-05-26 21:59:00,329 — DfHelper — ERROR — file not found
+Traceback (most recent call last):
+  File "/home/ermi/Desktop/10Academy/week3/scripts/file_handler.py", line 37, in read_csv
+    df = pd.read_csv(csv_path, na_values=missing_values)
+  File "/home/ermi/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ermi/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/ermi/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/ermi/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/home/ermi/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/home/ermi/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/home/ermi/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/base_parser.py", line 222, in _open_handles
+    self.handles = get_handle(
+  File "/home/ermi/anaconda3/lib/python3.9/site-packages/pandas/io/common.py", line 702, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../pages/train.csv'
+2022-05-26 22:25:54,682 — DfHelper — ERROR — file not found
+Traceback (most recent call last):
+  File "/home/ermi/Desktop/10Academy/week3/scripts/file_handler.py", line 37, in read_csv
+    df = pd.read_csv(csv_path, na_values=missing_values)
+  File "/home/ermi/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ermi/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/ermi/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/ermi/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/home/ermi/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/home/ermi/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/home/ermi/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/base_parser.py", line 222, in _open_handles
+    self.handles = get_handle(
+  File "/home/ermi/anaconda3/lib/python3.9/site-packages/pandas/io/common.py", line 702, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../pages/train.csv'
+2022-05-26 22:31:04,200 — DfHelper — DEBUG — file read as csv
