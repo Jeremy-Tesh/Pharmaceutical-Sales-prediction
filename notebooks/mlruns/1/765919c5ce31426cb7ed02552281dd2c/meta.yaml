@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ermi/Desktop/10Academy/week3/notebooks/mlruns/1/765919c5ce31426cb7ed02552281dd2c/artifacts
+end_time: 1653594838116
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 765919c5ce31426cb7ed02552281dd2c
+run_uuid: 765919c5ce31426cb7ed02552281dd2c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1653594838096
+status: 4
+tags: []
+user_id: ermi

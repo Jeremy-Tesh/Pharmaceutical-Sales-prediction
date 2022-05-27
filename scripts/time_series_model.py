@@ -90,7 +90,7 @@ def model(data, model_name):
 
 
 file_handler = FileHandler()
-train_df = file_handler.read_csv("../pages/train.csv")
+train_df = file_handler.read_csv("../data/train.csv")
 
 sales_data = train_df.groupby("Date").agg({"Sales": "mean"})
 new_model = model(sales_data, "TimeSeriesModel-Sales")
